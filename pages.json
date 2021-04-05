@@ -1,0 +1,125 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，更新页面后，需要重新运行程序。参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/tabBar/home/home",
+			"style": {
+				"navigationBarTitleText": "首页", // 状态栏文字
+				"h5": { // 取消默认的状态栏
+					"titleNView": false
+				},
+				"app-plus": { // 取消默认的状态栏
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/tabBar/category/category",
+			"style": {
+				"navigationBarTitleText": "分类",
+				"h5": {
+					"titleNView": false
+				},
+				"app-plus": {
+					"titleNView": false,
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/tabBar/cart/cart",
+			"style": {
+				"navigationBarTitleText": "购物车"
+			}
+		},
+		{
+			"path": "pages/tabBar/user/user",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/goods/goodsList",
+			"style": {
+				"navigationBarTitleText":"阿克布斯",
+				"enablePullDownRefresh": true //开启下拉刷新必须配置
+				// "onReachBottomDistance": 100 //距离底部0px开始加载新数据
+			}
+		},
+		{
+			"path": "pages/goods/goods_detail",
+			"style": {
+				"h5": {
+					"titleNView": false
+				},
+				"app-plus": {
+					"titleNView": false,
+					"bounce": "none"
+				}
+			}
+		},
+		{
+            "path" : "pages/goods/ratings",
+            "style": {
+            	"navigationBarTitleText": "商品评论"
+            }
+        },
+		{
+		    "path" : "pages/goods/confirm",
+		    "style": {
+		    	"navigationBarTitleText": "商品订单"
+		    }
+		},
+		{
+		    "path" : "pages/tabBar/user/qrcode",
+		    "style": {
+		    	"navigationBarTitleText": "个人名片"
+		    }
+		}
+    ],
+	"globalStyle": { //标题栏全局样式
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "谷世杰",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#FFFFFF"
+	},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "", //模式名称
+			"path": "", //启动页面，必选
+			"query": "" //启动参数，在页面的onLoad函数里面得到
+		}]
+	},
+	"tabBar": { //设置底部导航
+		"color": "#333333",
+		"selectedColor": "#f06c7a",
+		"borderStyle": "black",
+		"backgroundColor":"#FFFFFF",
+		"list": [
+			{
+				"pagePath":"pages/tabBar/home/home",
+				"iconPath":"static/img/tabBar/home.png",
+				"selectedIconPath":"static/img/tabBar/home-on.png",
+				"text":"首页"
+			},
+			{
+				"pagePath":"pages/tabBar/category/category",
+				"iconPath":"static/img/tabBar/category.png",
+				"selectedIconPath":"static/img/tabBar/category-on.png",
+				"text":"分类"
+			},
+			{
+				"pagePath":"pages/tabBar/cart/cart",
+				"iconPath":"static/img/tabBar/cart.png",
+				"selectedIconPath":"static/img/tabBar/cart-on.png",
+				"text":"购物车"
+			},
+			{
+				"pagePath":"pages/tabBar/user/user",
+				"iconPath":"static/img/tabBar/user.png",
+				"selectedIconPath":"static/img/tabBar/user-on.png",
+				"text":"我的"
+			}
+		]
+	}
+}

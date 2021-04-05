@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "goods-header": "/components/GoodsHeader",
+    "popup-spec": "/components/PopupSpec"
+  }
+}
